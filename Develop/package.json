@@ -1,13 +1,26 @@
 {
-  "name": "static-site",
+  "name": "my_professional_readme_generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A readme generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon node index.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinJ3259/my_professional_readme_generator.git"
+  },
+  "keywords": [
+    "generator",
+    "readme"
+  ],
+  "author": "Kevin Jordan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinJ3259/my_professional_readme_generator/issues"
+  },
+  "homepage": "https://github.com/KevinJ3259/my_professional_readme_generator#readme",
   "dependencies": {
     "inquirer": "^6.3.1"
   }
