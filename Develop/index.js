@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
 let inquirer = require("inquirer");
+let fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -53,21 +55,13 @@ async function init() {
   let answered_questions = await inquirer
     .prompt(questions)
     .then((answers) => Object.entries(answers))
-    .then((answers) => {
-      console.log("answers from inquirer", answers);
+    .then(generateMarkdown)
+    .then((markdown) => {
+      fs.writeFile("./output/Readme.md", markdown, { flag: "w+" }, (err) => {
+        if (err) return console.log(err);
 
-      let template = require("./template");
-
-      for (const answered_question in answers) {
-        let [key, value] = answered_question;
-
-        console.table({ key, value });
-        template.replace(key, value);
-      }
-
-      console.log(template);
-
-      // print to a new Readme.md file
+        console.log("Writing Readme.md completed");
+      });
     })
     .catch((err) => console.log("generator suffered an exception", err));
 }
