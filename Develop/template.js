@@ -43,14 +43,11 @@ project_info_test_instructions
 
 ## Questions
 
-[Github username](project_info_gitHub_username)
-[Github link](project_info_github_link)
+[project_info_gitHub_username](project_info_github_link)
 
-project_info_test_instructions
+project_info_email
 
-## Badges
-
-project_info_badge
+For any questions or concerns please contact me at the above email address
 
 ## How to Contribute
 

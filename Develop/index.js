@@ -27,7 +27,7 @@ const questions = [
   },
   {
     name: "project_info_license",
-    type: "checkbox",
+    type: "list",
     message: "What license do you want to use",
     choices: ["MIT", "commercial", "GNU", "APACHE"],
   },
@@ -54,7 +54,7 @@ async function init() {
 
   let answered_questions = await inquirer
     .prompt(questions)
-    .then((answers) => Object.entries(answers))
+    // .then((answers) => Object.entries(answers))
     .then(generateMarkdown)
     .then((markdown) => {
       fs.writeFile("./output/Readme.md", markdown, { flag: "w+" }, (err) => {
