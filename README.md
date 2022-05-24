@@ -9,14 +9,15 @@ Deployment
 Installation
 License
 Description:
-[](untitled:%20May%2023%2C%202022%208%3A54%20PMMay%2023%2C%202022%20%E2%80%A2%204m%2035sUntitled%3A%20Mar%2013%2C%202022%209%3A19%20PMMar%2013%2C%202022%20%E2%80%A2%2044s1%20%E2%80%93%202%20of%202Having%20trouble%20finding%20or%20opening%20some%20videos?%20Sync%20Videos%F0%9F%93%8A%20Video%20analytics%20at%20a%20g)
+
+
 
 
 
 Installation:
 No installation is needed
-You may view the code on [GitHub] 
-To view the site on GitHub Pages 
+You may view the code on [GitHub] https://github.com/KevinJ3259/my_professional_readme_generator/settings/page
+To view the site on GitHub Pages https://drive.google.com/file/d/10-kfYWGB0YMphawEgRSZib5zRR0c7Bex/view
 License:
 MIT License
 
